@@ -88,5 +88,14 @@ public class LaboonCoinTest {
     public void testFalseDifficulty(){
       assertFalse(_l.validHash(3, 0x00455667));
     }
+    @Test
+    public void testFalseDifficulty2(){
+      assertFalse(_l.validHash(3, 0x11455667));
+    }
+    @Test
+    public void testFalseDifficulty3(){
+      assertFalse(_l.validHash(3, 0xFF455667));
+    }
+
 
 }
