@@ -1,0 +1,2 @@
+# LaboonCoin
+Exercise 2
