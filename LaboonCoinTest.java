@@ -60,4 +60,19 @@ public class LaboonCoinTest {
 
     // TODO - PUT YOUR SIX TESTS HERE
 
+    @Test
+    public void testBillHash(){
+        assertEquals(_l.hash("bill"), 1405359148);
+    }
+
+    @Test
+    public void testEmptyStringHash(){
+        assertEquals(_l.hash(""), 0x00989680);
+    }
+
+    @Test
+    public void testWrapAround(){
+        assertFalse((long)_l.hash("boo") == 12074581219890L);
+    }
+
 }

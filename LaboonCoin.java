@@ -106,7 +106,7 @@ public class LaboonCoin {
 
     public boolean validHash(int difficulty, int hash) {
 	// TODO - CHECK FOR VALID HASHES
-	return false;
+        return hash < Math.pow(2,(8-difficulty));
     }
 
     /**
