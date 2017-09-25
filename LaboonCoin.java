@@ -106,7 +106,30 @@ public class LaboonCoin {
 
     public boolean validHash(int difficulty, int hash) {
 	// TODO - CHECK FOR VALID HASHES
+<<<<<<< HEAD
         return hash < Math.pow(2,(8-difficulty));
+=======
+      String hexValue = Integer.toHexString(hash);
+      int count = 0;
+      for(char c: hexvalue)
+      {
+        if(c!='0')
+        {
+          break;
+        }
+        else{
+          count++;
+        }
+      }
+      if(count>=difficulty)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+>>>>>>> 83f92ee55f96070c92d5f05c36114f58671e568e
     }
 
     /**
